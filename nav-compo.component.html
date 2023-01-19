@@ -1,0 +1,106 @@
+<div class="parent">
+
+    <div class="container-fluid left-side">
+        <button class="tablink" onclick="openPage('PRODUCTS', this, 'red')">PRODUCTS</button>
+        <button class="tablink" onclick="openPage('PRICE', this, 'green')" id="defaultOpen">PRICE</button>
+        <button class="tablink" onclick="openPage('QUANTITY', this, 'blue')">QUANTITY</button>
+        <button class="tablink" onclick="openPage('TOTAL', this, 'orange')">TOTAL</button>
+
+        <!-- <div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>  -->
+        <div class="container">
+
+            <div class="card text-center">
+                 <div class="card-header"> </div> 
+
+                <div class="card-body">
+                     <h5 class="card-title">THERE ARE NO PRODUCTS</h5> 
+                    <h1>{{Messge}}</h1> 
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <table class="table table-bordered" #D1>
+
+                <thead>
+                    <tr>
+                        <th>subtotal</th>
+                        <th>0.000EUR</th>
+                        <th>0 items</th>
+                    </tr>
+
+                    <tr>
+                        <th>VAX TAX</th>
+                        <th>10%</th>
+                        <th>0.000EUR</th>
+                    </tr>
+
+                    <tr>
+                        <th>Discount</th>
+                        <th>10%</th>
+                        <th>0.000EUR</th>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>0.000EUR</th>
+
+                    </tr>
+
+
+
+                    <!-- </thead> -->
+
+                <tbody>
+
+                    <!-- <tr></tr> -->
+
+                </tbody>
+
+            </table>
+        </div>
+
+     <form name="myForm" #frm="ngForm">
+        
+        <div>
+            <button class="btn btn-danger" (click)=" CancelCell(frm)"
+                ngSubmit="myForm.onSubmit(myForm)">CANCELSALE</button> &nbsp;
+            
+            <button class="btn btn-success" (click)="ProcessCell(frm)">PROCESSSALE</button>
+        </div>
+
+    </form>
+ </div> 
+
+    <div class="container-fluid right-side">
+        <app-compo-produ2></app-compo-produ2>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
